@@ -1,4 +1,4 @@
-package com.hf.test;
+package com.hf.test.entity;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -12,7 +12,7 @@ public class DigitsDataSource {
     public static DigitsDataSource digitsDataSource = null;
 
     //数据存入Map集合中
-    private static Map<String,Object> dataSource = new HashMap<String, Object>();
+    private static Map<String,Object> dataSource = new HashMap<>();
 
     public DigitsDataSource(){
         this.init();
@@ -21,7 +21,7 @@ public class DigitsDataSource {
     /**
      * 初始化Map集合中的数据
      */
-    public void init(){
+    /*public void init(){
         dataSource.put("0", Arrays.asList(""));
         dataSource.put("1",Arrays.asList(""));
         dataSource.put("2",Arrays.asList("A","B","C"));
@@ -32,6 +32,19 @@ public class DigitsDataSource {
         dataSource.put("7",Arrays.asList("P","Q","R","S"));
         dataSource.put("8",Arrays.asList("T","U","V"));
         dataSource.put("9",Arrays.asList("W","X","Y","Z"));
+    }
+*/
+    public void init(){
+        dataSource.put("0", "");
+        dataSource.put("1","");
+        dataSource.put("2","abc");
+        dataSource.put("3","def");
+        dataSource.put("4","ghi");
+        dataSource.put("5","jkl");
+        dataSource.put("6","mno");
+        dataSource.put("7","pqrs");
+        dataSource.put("8","tuv");
+        dataSource.put("9","wxyz");
     }
 
     /**
