@@ -14,9 +14,6 @@ public class CombinUtils {
      * @return 组合结果
      */
     public static List<String> combin(List<List<String>> dataList){
-        if (invalid(dataList) || invalid(dataList.get(0))) {
-            return null;
-        }
         List<String> combine = dataList.get(0);
         for (int i = 1; i < dataList.size(); i++) {
             combine = cartesianProduct(combine, dataList.get(i));
@@ -38,15 +35,6 @@ public class CombinUtils {
             }
         }
         return combine;
-    }
-
-    /**
-     * 验证集合是否无效
-     * @param c 集合
-     * @return true 无效
-     */
-    private static boolean invalid(List<?> c) {
-        return c == null || c.isEmpty();
     }
 
 }

@@ -48,7 +48,7 @@ public class DigitsService {
         //使用递归实现排列组合，得到输出内容
         List<String> strings = CombinUtils.combin(dataList);
         for (int i = 0; i < strings.size(); i++){
-            outStr.append(strings.get(i) + " ");
+            outStr.append(strings.get(i).toLowerCase() + " ");
         }
         //打印输出内容
         System.out.println(outStr.toString());

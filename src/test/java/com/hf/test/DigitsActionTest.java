@@ -3,9 +3,6 @@ package com.hf.test;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-
 
 public class DigitsActionTest {
 
@@ -18,11 +15,10 @@ public class DigitsActionTest {
 
     @Test
     public void getResult() {
-
         //传入不合法的参数
         digitsAction.getResult("109");
         //输入正常值
-        digitsAction.getResult("33");
+        digitsAction.getResult("23");
         //输入11
         digitsAction.getResult("11");
         //输入12
